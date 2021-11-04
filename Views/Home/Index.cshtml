@@ -1,0 +1,196 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-height:20em">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" style="width:100%; max-height:40em">
+            <div class="item active">
+                <img src="~/Images/Hotels Rooms/premiere 1_1920x960.jpg" alt="Chania" class="center-block" style="width:100%; max-height:20em">
+                <div class="carousel-caption top">
+                    <h3>VIP Rooms</h3>
+                    <p>Get VIP Rooms with so much fun!</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~/Images/hotel_booking.jpg" class="center-block" alt="Chicago" style="width:100%; max-height:20em">
+                <div class="carousel-caption">
+                   
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~/Images/winning-back-a-client.jpg" class="center-block" alt="New York" style="width: 100%; max-height: 20em">
+                <div class="carousel-caption">
+                    <h3>24X7 Customer Service</h3>
+                    <p>We love every customer and will do the best to serve you better.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div style="background-color:lightblue; padding-top:10px; padding-bottom:10px; text-align:center;">
+            <h2>Getting started</h2>
+            <p>
+                Create Account in a few simple steps and become eligible to book.
+            </p>
+            <button class="btn btn-danger">@Html.ActionLink("Get Started", "Register", "Account")</button>
+        </div>
+ 
+    </div>
+    <div class="col-lg-6">
+        <div style="background-color: lightblue; padding-top: 10px; padding-bottom: 10px; text-align: center;">
+            <h2>Booking History</h2>
+            <p>View your history and explore your past lodgings. We have an advance search with which you can query your history with us.</p>
+            <button class="btn btn-danger">@Html.ActionLink("View", "Index", "Room_Usage")</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="" style="background-color:black; margin-top:20vh; margin-bottom:10px;" >
+    <h1 style="text-align:center; color:white;">Browse through our best Hotels!</h1>
+</div>
+
+<div class="row" style="margin-top:10vh; margin-bottom:10vh;">
+    <div class="col-lg-8">
+        <input type="text" placeholder="Search Hotels" style="margin-left:63vh; width:100%; height:5.65vh;" />
+    </div>
+    <div class="col-lg-4">
+       <button class="btn btn-danger" style="margin-left:-20vh;">Search</button>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/hotel.jpg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Monteverde</b></p>
+                <p style="text-align:center;">Monteverde Country Lodge is a quiet, comfortable hotel located near the Ecological Sanctuary and the Monteverde Butterfly Gardens in an area called Cerro Plano.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h2.jpeg" style="width:44.4vh; height:35vh; ">
+                <p style="text-align:center;"><b>Hilton Garden Inn</b></p>
+                <p style="text-align:center;">We're in the Gomti Nagar district, five minutes from Kisan Bazar and Indira Ghandi Pratishthan Convention Center.Enjoy our fitness center, rooftop pool.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h2.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Hotel</b></p>
+                <p style="text-align:center;">Our Agra hotel is under three kilometers from the Taj Mahal — you can see the famous landmark from our infinity pool.Enjoy a treatment in our spa and take advantage of our 24-hour fitness center. We'll have a cookie waiting.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h3.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Hotel</b></p>
+                <p style="text-align:center;">Our Agra hotel is under three kilometers from the Taj Mahal — you can see the famous landmark from our infinity pool.Enjoy a treatment in our spa and take advantage of our 24-hour fitness center. We'll have a cookie waiting.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h4.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Hotel Jaipur</b></p>
+                <p style="text-align:center;">We’re on the outskirts of Jaipur, one kilometer from Ram Nagar metro stop with connections to the bustling city center. Jaipur International Airport is 11 km away. We have a rooftop pool with cabanas and a spa offering Indian-style treatments.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h5.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Double True</b></p>
+                <p style="text-align:center;">Echoing the glamour of the Art Deco era, our Central Business District hotel is two kilometers from Koregaon Park. Our concierge is on-hand to curate local experiences, reserve limousine travel, and more.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h6.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Conrad</b></p>
+                <p style="text-align:center;">Our hotel is a two-minute walk from the Sector 55-56 Rapid Metro station — the subway stops at several corporate parks and reaches DLF Cyber City in about 10 minutes.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h7.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Double Tree</b></p>
+                <p style="text-align:center;">We're less than a kilometer from the city center, close to major firms, hospitals and government offices.Vadodara Airport is 15 minutes' drive away. Refresh in our outdoor pool, or enjoy a buffet or a la carte meal in our restaurant</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h8.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Hampton</b></p>
+                <p style="text-align:center;">We are just 10 minutes from the city center, surrounded by the restaurants of Baani Square. Huda Metro Station (Yellow Line) is just five kilometers away. Plus, our rooftop infinity pool and restaurants offer great views of the surrounding city.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h9.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Hotel Oxin</b></p>
+                <p style="text-align:center;">Tucked between lush forest and the calming waters of the Mandovi River, we’re located 10 minutes from the UNESCO World Heritage Site at Old Goa.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h10.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Villa</b></p>
+                <p style="text-align:center;">Featuring palace-style architecture, our hotel is three kilometers from Chhatrapati Shivaji Airport. Oberoi Mall and the Andheri business district are within a 20-minute drive.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h11.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Roxane</b></p>
+                <p style="text-align:center;">We're less than a kilometer from the city center, close to major firms, hospitals and government offices.Vadodara Airport is 15 minutes' drive away. Refresh in our outdoor pool, or enjoy a buffet or a la carte meal in our restaurant</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+        <div class="col-lg-4" style=" margin-top:20px;">
+            <div style="border: 2px solid black; width: 45vh;">
+                <img src="~/Images/h12.jpeg" style="width:44.4vh; height:35vh;">
+                <p style="text-align:center;"><b>Nova</b></p>
+                <p style="text-align:center;">Featuring palace-style architecture, our hotel is three kilometers from Chhatrapati Shivaji Airport. Oberoi Mall and the Andheri business district are within a 20-minute drive.</p>
+                <button class="btn btn-danger" style="margin-left: 85px; margin-bottom:20px; color:white;">@Html.ActionLink("Book Now", "Create", "Room_Usage")</button>
+            </div>
+        </div>
+
+    </div>
+</div>
